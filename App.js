@@ -2,6 +2,7 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import HomeScreen from './src/screens/HomeScreen';
+import ProfileScreen from './src/screens/ProfileScreen';
 import { 
     SafeAreaView,
     Text, 
@@ -18,6 +19,7 @@ const App = () => {
             <Stack.Navigator>
                 <Stack.Screen name='Main' component={Main} options={{headerShown:false}} />
                 <Stack.Screen name='Home' component={HomeScreen} />
+                <Stack.Screen name='Profile' component={ProfileScreen} />
             </Stack.Navigator>
         </NavigationContainer>
       );
